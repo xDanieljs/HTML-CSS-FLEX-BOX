@@ -1,0 +1,438 @@
+
+/* PARA RESERTAR A PAGINA ANTES DE COMEÇAR A CODAR.*/
+body,h1,h2,p,ul,li,a{
+    margin: 0px;
+    padding: 0px;
+    
+}
+/*define fonte das letras e cor para a página.*/
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222222;
+    
+}
+/*retira o estilo da lista.*/
+ul{
+    list-style: none;
+
+}
+/*retira decoração dos links*/
+a{
+    text-decoration:none;
+}
+/* imagens ficam responsivo conforme diminui e aumenta a tela.*/
+img{
+
+   display:block;
+   max-width:100%;
+
+}
+/*server para respeitar o tamanho da área width de todos os elementos*/
+*{
+   box-sizing: border-box;
+}
+
+/* Estilo do ENDEREÇO */
+.flex1{
+    background:rgb(19, 2, 248);
+    color:white;
+
+}
+
+.info a{
+    color:white;
+}
+.info{
+    max-width:960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+
+}
+
+.info p, .info a{
+    margin:0 10px 10px 0;
+}
+
+/* Estilo do MENU */
+.flex2{
+    background:rgb(114, 174, 243);
+   
+}
+
+.menu{
+    max-width: 960px;
+    margin:0 auto;
+    padding:15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+   color :white; 
+}
+
+.logo{
+    font-size:3.45em;
+    font-weight: bold;
+    margin:0 10px;
+}
+
+.flex3 ,ul{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.flex3 a{
+    font-size: 15px;
+    display: block;
+    padding:12px;
+}
+    
+.flex3 a:hover{
+    color:blue;
+}
+
+/* Estilo da INTRODUÇÃO */
+
+.introducao{
+    font-size:3em;
+    line-height: 1;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    padding:60px 10px;
+
+}
+
+/* Linha de divisão do conteúdo. */
+.sobre{
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+    max-width: 960px;
+    margin: 0 auto;
+    padding:60px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.sobre-info{
+    flex:2 1 300px;
+    margin: 0 10px;
+}
+
+.sobre-info h1{
+    font-size:3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p{
+    font-size:1.25em;
+    line-height:1.4;
+    margin-bottom:1em;
+    color: #000;
+
+
+}
+.sobre-img{
+    flex:1 1 160px;
+    margin:0 10px;
+    padding:  0 auto;
+    
+}
+
+/* Estilos dos Produtos*/
+
+.PRODUTOS{
+    max-width: 960px;
+    margin: 60px auto;
+
+}
+
+.PRODUTOS h1{
+    font-size:3em;
+    margin:0 10px 60px 10px;
+
+}
+
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    
+}
+
+.produtos-item{
+    flex: 1 1 175px;
+    margin: 10px;
+
+}
+
+.produtos-item  h2{
+    font-size:3em;
+    color:#a4a4a4 ;
+    background:#f7f7f7;
+    padding:60px 20px;
+}
+
+.purple{
+    border-top: 8px solid #945ff7;
+}
+
+.pink{
+    border-top: 8px solid rgb(250, 0, 0);
+}
+
+.blue{
+    border-top: 8px solid rgb(8, 212, 248);
+}
+
+/* Estilo do PREÇOS*/
+
+.PRECOS{
+    max-width: 960px;
+    background:#f7f7f7;
+    margin: 0 auto;
+    padding:60px;
+    display: flex;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    
+}
+
+    
+.preco-item{
+    flex:1 1 260px;
+    border: 4px solid white;
+    padding:20px;
+    
+}
+
+.preco-item h2{
+    font-size:3em;
+    color: #a4a4a4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.preco-item span{
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    font-size:3em;
+    text-align: center;
+    font-weight: bold;
+    padding:10px 0 5px 0;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+
+}
+
+.preco-item sup{
+    font-size:1.5rem;
+}
+
+.preco-item ul{
+    max-width:300px;
+    margin: 20px auto;
+    font-size:1.25em;
+    font-style: italic;
+    color:#7c7c7c;
+    text-align: center;
+    
+
+}
+
+.preco-item li{
+    display: flex;
+    align-items: center;
+    margin-bottom:15px;
+    
+    
+    
+
+}
+/* Comando para fazer a bolinha nos itens*/
+.preco-item li::before{
+    content:"";
+    width: 6px;
+    height: 6px;
+    background:#2c70ff;
+    border-radius: 50%;
+    align-content: space-between;
+    margin: 10px;
+    
+}
+
+.preco-item a{
+    max-width:280px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:2.0em;
+    text-align: center;
+}
+
+@media(max-width:800px) {
+    .preco-item{
+        padding-left:10px;
+        padding-right:10px;
+    }
+ .PRECOS .preco-item:nth-child(3){
+    order: -2;
+ }
+
+ .PRECOS .preco-item:nth-child(2){
+    order: -1;
+ }
+
+}
+
+/*  Estilo de Qualidade*/
+
+
+.QUALIDADE{
+   max-width: 960px; 
+   margin:60px auto;
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+.qualidade-item{
+    flex:1 1 300px;
+    margin: 20px 10px;
+}
+.qualidade-item h2{
+    font-size:2.25em;
+    color:#a4a4a4;
+    margin-bottom:20px;
+}
+
+.qualidade-item h2::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+    background:blue;
+
+}
+.qualidade-item:nth-of-type(3n+1) h2::before {
+    background:#ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {
+    background:#f9265e;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {
+    background:#66d9eb;
+}
+
+.qualidade-item p{
+    font-size:1.25em;
+    line-height: 1.4em;
+    text-indent: 25px;
+}
+
+/* Newsletter */
+
+.newsletter{
+
+    background:#f7f7f7;
+    padding:60px calc((100% - 960px) / 2 );
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info{
+    flex: 1 1 240px;
+    margin: 0 10px;
+
+}
+
+.newsletter-info h1{
+    font-size: 3em;
+    color: #a4a4a4;
+
+}
+
+.newsletter-info p{
+    font-size: 1.25em;
+    font-style: italic;
+    max-width:230px;
+    color:#7c7c7c;
+    margin-bottom:10px;
+
+}
+
+.newsletter-form{
+    flex:2 1 260px;
+    margin:0 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.newsletter-form input{
+    flex:3 1 260px;
+    font-size: 1.25em;
+    color:#7c7c7c;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    border:4px solid #2c70ff;
+    background:transparent;
+    padding:15px 10px;
+    margin: 0px;
+    border-radius:0px;
+    
+    
+}
+
+.newsletter-form button{
+    flex:1 1 260px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:2.25em;
+    font-weight:bold;
+    text-transform:uppercase;
+    background: #2c70ff;
+    color:white;
+    margin:  0px;
+    cursor:pointer;
+    border: 0px;
+    padding:15px;
+    
+    
+}
+
+@media(max-width:600px){
+    .newsletter-form button {
+        font-size:1.5em;
+    }
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    background:#2c70ff;
+    height:200px;
+    align-items:center;
+}
+
+.footer p{
+    flex: 1;
+    text-align:center;
+    font-size:2.25em;
+    color:#000;
+}
